@@ -28,6 +28,8 @@ gem 'pg'
 gem 'dotenv'
 
 gem 'faker', '>= 1.6.1', group: [:development, :test, :staging]
+gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
+gem 'devise-jwt'
 
 group :development, :test do
   gem 'byebug', platforms: :mri

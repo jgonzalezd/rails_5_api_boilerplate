@@ -1,24 +1,17 @@
-# README
+# Barebone Rails app with Rspec and Factory Girl set up
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Master branch is vanilla Rails API + Rspec + Dotenv + DB Cleaner
 
-Things you may want to cover:
+**This branch does not contain authentication**
 
-* Ruby version
+You can use this master to start your own authentication implementation. (However there is also a branch for that)
 
-* System dependencies
+## Branches
 
-* Configuration
+### devise-jwt
 
-* Database creation
+This branch contains `Devise` + `JWT authentication` for `User`
 
-* Database initialization
+## manual-authentication
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This branch contains a manual implementation of JWT authentication using the `gem jwt` only

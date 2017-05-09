@@ -18,4 +18,4 @@ This branch contains `Devise` + `JWT authentication` for `User` using the [devis
 
 ### manual-authentication
 
-This branch contains a manual implementation of JWT authentication using the `gem jwt` only
+This branch contains a manual implementation of JWT authentication using the [jwt](https://github.com/jwt/ruby-jwt) gem only

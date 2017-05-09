@@ -1,16 +1,16 @@
 {
 	"variables": [],
 	"info": {
-		"name": "boilerplate_api",
-		"_postman_id": "d17fa0db-7a0e-d0e0-b76c-c25c8f2ab3c4",
+		"name": "devise-jwt",
+		"_postman_id": "e19ac1c4-7692-6f5d-9feb-2f88ee26882e",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "http://localhost:3000/users",
+			"name": "User registration",
 			"request": {
-				"url": "http://localhost:3000/users",
+				"url": "http://localhost:3000/api/v1/users",
 				"method": "POST",
 				"header": [
 					{
@@ -28,9 +28,9 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:3000/users/login",
+			"name": "User Log In",
 			"request": {
-				"url": "http://localhost:3000/users/login",
+				"url": "http://localhost:3000/api/v1/users/sign_in",
 				"method": "POST",
 				"header": [
 					{
@@ -41,9 +41,9 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"anewpassword\"\n}"
+					"raw": "{\n  \"user\": {\n    \"email\": \"test@example.com\",\n    \"password\": \"anewpassword\"\n  }\n}"
 				},
-				"description": "Logs in a user"
+				"description": "User Login"
 			},
 			"response": []
 		}

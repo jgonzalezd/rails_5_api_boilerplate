@@ -1,0 +1,14 @@
+Request specs provide a thin wrapper around Rails' integration tests, and are
+designed to drive behavior through the full stack, including routing
+(provided by Rails) and without stubbing (that's up to you).
+
+Request specs are marked by :type => :request or if you have set
+config.infer_spec_type_from_file_location! by placing them in spec/requests.
+
+With request specs, you can:
+
+specify a single request
+specify multiple requests across multiple controllers
+specify multiple requests across multiple sessions
+
+https://www.relishapp.com/rspec/rspec-rails/docs/request-specs/request-spec

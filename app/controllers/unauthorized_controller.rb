@@ -5,8 +5,7 @@ class UnauthorizedController < ActionController::Metal
   end
 
   def respond
-    byebug
-    self.response_body = "no entra papa!"
+    self.response_body = {"error"=> "You dont have authorization to access this resource"}.to_json
     self.status = :unauthorized
   end
 end

@@ -10,6 +10,9 @@ end
 gem 'rails', '~> 5.1.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+gem 'pg'
+# gem 'pg_search'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -23,17 +26,16 @@ gem 'puma', '~> 3.7'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
-gem 'pg'
-# gem 'pg_search'
+
 gem 'dotenv'
 
 gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
 gem 'devise-jwt'
 
-gem 'faker', '>= 1.6.1', group: [:development, :test, :staging]
-
 group :development, :test do
-  gem 'byebug', platforms: :mri
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platforms: [:mri]#, :mingw, :x64_mingw]
+  gem 'faker'
 end
 
 group :development do
@@ -45,8 +47,11 @@ group :development do
 end
 
 group :test do
-  gem 'guard-rspec' #The Guard file watcher for running rspec
-  gem 'factory_girl_rails', group: [:development, :test, :staging]
+  gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'rspec-rails' #The RSpec testing framework with Rails integrations
+  gem 'rspec-json_expectations'
 end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

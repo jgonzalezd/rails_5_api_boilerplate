@@ -49,6 +49,4 @@ group :test do
   gem 'factory_girl_rails', group: [:development, :test, :staging]
   gem 'database_cleaner'
   gem 'rspec-rails' #The RSpec testing framework with Rails integrations
-  gem 'capybara'
-  gem 'capybara-email' #Easily test ActionMailer and Mail messages in your Capybara integration tests
 end

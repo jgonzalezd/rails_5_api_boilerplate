@@ -16,6 +16,6 @@ You can use this master to start your own authentication implementation. (Howeve
 
 This branch contains `Devise` + `JWT authentication` for `User`
 
-## manual-authentication
+### manual-authentication
 
 This branch contains a manual implementation of JWT authentication using the `gem jwt` only

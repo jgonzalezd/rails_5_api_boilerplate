@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "boilerplate_api",
+		"_postman_id": "d17fa0db-7a0e-d0e0-b76c-c25c8f2ab3c4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"url": "http://localhost:3000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user\": {\n    \"email\": \"test@example.com\",\n    \"password\": \"anewpassword\",\n    \"password_confirmation\": \"anewpassword\"\n  }\n}"
+				},
+				"description": "User registration"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/login",
+			"request": {
+				"url": "http://localhost:3000/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"anewpassword\"\n}"
+				},
+				"description": "Logs in a user"
+			},
+			"response": []
+		}
+	]
+}

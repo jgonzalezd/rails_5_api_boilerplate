@@ -7,7 +7,9 @@ It uses the [devise-jwt] (https://github.com/waiting-for-dev/devise-jwt) which i
 ##Set Up
 
 1. Configure Database
+
 Out of the box it uses PostgreSql DB. For this reason you need to have PostgreSql installed and permissions for create DB setup
+
 2. run `bundle install`
 3. Run migrations `rails db:migrate`
 

@@ -8,29 +8,48 @@ It uses the [devise-jwt] (https://github.com/waiting-for-dev/devise-jwt) which i
 
 1. Configure Database
 
-    Out of the box it uses PostgreSql DB. For this reason you need to have PostgreSql installed and permissions for create DB setup
+    Out of the box it uses PostgreSql DB. For this reason you need to have PostgreSql installed and permissions for create DB
 
 2. run `bundle install`
 3. Run migrations `rails db:migrate`
+4. Run `rails server`
 
+## Requests
 
+You can see sample [Postman](https://www.getpostman.com/) requests under directory `sample_requests`
 
+### Registrations
 
-aaaaa
-* Ruby version
+```
+POST /api/v1/users HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: 3b86f9c1-3c60-3612-7de6-2e19eb6ac5ed
 
-* System dependencies
+{
+  "user": {
+    "email": "test@example.com",
+    "password": "anewpassword",
+    "password_confirmation": "anewpassword"
+  }
+}
+```
 
-* Configuration
+### Log in
 
-* Database creation
+```
+POST /api/v1/users/sign_in HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: d9f5fd9d-83e8-97bf-d8c2-abd8f340963c
 
-* Database initialization
+{
+  "user": {
+    "email": "test@example.com",
+    "password": "anewpassword"
+  }
+}
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

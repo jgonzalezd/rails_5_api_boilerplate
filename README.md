@@ -1,12 +1,16 @@
-# Barebone Rails app with Rspec and Factory Girl set up
+# Boilerplate application for a new Rails API 
+
+This repository provides you with a starting point for a new API project using Ruby on Rails
+
+## Branches
+
+### master
 
 Master branch is vanilla Rails API + Rspec + Dotenv + DB Cleaner
 
 **This branch does not contain authentication**
 
 You can use this master to start your own authentication implementation. (However there is also a branch for that)
-
-## Branches
 
 ### devise-jwt
 

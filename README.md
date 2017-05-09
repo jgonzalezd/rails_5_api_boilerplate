@@ -53,3 +53,6 @@ Postman-Token: d9f5fd9d-83e8-97bf-d8c2-abd8f340963c
 }
 ```
 
+## Factories
+
+It is possible to generate factories using `rails g factory_girl:model BlahBla`
